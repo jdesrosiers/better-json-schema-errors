@@ -1,0 +1,42 @@
+{
+  "name": "@hyperjump/better-json-schema-errors",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "JSON Schema",
+    "errors",
+    "output format"
+  ],
+  "contributors": [
+    "Jason Desrosiers <jdesrosi@gmail.com>",
+    "Arpit Kuriyal <arpitkuriyal2002@gmail.com>"
+  ],
+  "license": "MIT",
+  "repository": "github:hyperjump-io/better-json-schema-errors",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/hyperjump-io"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "test": "vitest --watch=false",
+    "type-check": "tsc --noEmit",
+    "docs": "typedoc --excludeExternals"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "*",
+    "@types/node": "*",
+    "eslint-import-resolver-typescript": "*",
+    "eslint-plugin-import": "*",
+    "typedoc": "*",
+    "typescript-eslint": "*",
+    "vitest": "*"
+  },
+  "dependencies": {
+    "@hyperjump/json-schema": "^1.14.1"
+  }
+}
